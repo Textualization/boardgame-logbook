@@ -6,7 +6,7 @@ var goappOnUpdate = function () { };
 
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
-    .register("/pablo/test-bl/app-worker.js")
+    .register("/boardgame-logbook/app-worker.js")
     .then(reg => {
       console.log("registering app service worker");
 
@@ -29,7 +29,7 @@ if ("serviceWorker" in navigator) {
 // -----------------------------------------------------------------------------
 // Init progressive app
 // -----------------------------------------------------------------------------
-const goappEnv = {"GOAPP_ROOT_PREFIX":"/pablo/test-bl","GOAPP_STATIC_RESOURCES_URL":"/pablo/test-bl","GOAPP_VERSION":"eedd657c07629ef8f16e2a1ef893455d2b9e37eb"};
+const goappEnv = {"GOAPP_ROOT_PREFIX":"/boardgame-logbook","GOAPP_STATIC_RESOURCES_URL":"/boardgame-logbook","GOAPP_VERSION":"c7a21deabfa747de3c94c3d8087e62ba57c0ad9c"};
 
 function goappGetenv(k) {
   return goappEnv[k];
@@ -54,7 +54,7 @@ if (!WebAssembly.instantiateStreaming) {
 
 const go = new Go();
 
-WebAssembly.instantiateStreaming(fetch("/pablo/test-bl/web/app.wasm"), go.importObject)
+WebAssembly.instantiateStreaming(fetch("/boardgame-logbook/web/app.wasm"), go.importObject)
   .then(result => {
     const loaderIcon = document.getElementById("app-wasm-loader-icon");
     loaderIcon.className = "goapp-logo";

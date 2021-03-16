@@ -23,7 +23,7 @@ func main() {
 			"app",
 			"pwa",
 		},
-		Resources:   app.GitHubPages("boardgame-logbook"),
+		Resources:   app.GitHubPages("/boardgame-logbook"),
     })
 
     if err != nil {

@@ -3,18 +3,18 @@
   "name": "Boardgame Logbook",
   "icons": [
     {
-      "src": "/pablo/test-bl/web/logo192.png",
+      "src": "/boardgame-logbook/web/logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/pablo/test-bl/",
+      "src": "/boardgame-logbook/",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "scope": "/pablo/test-bl/",
-  "start_url": "/pablo/test-bl/",
+  "scope": "/boardgame-logbook/",
+  "start_url": "/boardgame-logbook/",
   "background_color": "#2d2c2c",
   "theme_color": "#2d2c2c",
   "display": "standalone"

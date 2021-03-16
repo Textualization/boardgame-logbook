@@ -1,20 +1,20 @@
-const cacheName = "app-" + "eedd657c07629ef8f16e2a1ef893455d2b9e37eb";
+const cacheName = "app-" + "c7a21deabfa747de3c94c3d8087e62ba57c0ad9c";
 
 self.addEventListener("install", event => {
-  console.log("installing app worker eedd657c07629ef8f16e2a1ef893455d2b9e37eb");
+  console.log("installing app worker c7a21deabfa747de3c94c3d8087e62ba57c0ad9c");
   self.skipWaiting();
 
   event.waitUntil(
     caches.open(cacheName).then(cache => {
       return cache.addAll([
-        "/pablo/test-bl",
-        "/pablo/test-bl/",
-        "/pablo/test-bl/app.css",
-        "/pablo/test-bl/app.js",
-        "/pablo/test-bl/manifest.webmanifest",
-        "/pablo/test-bl/wasm_exec.js",
-        "/pablo/test-bl/web/app.wasm",
-        "/pablo/test-bl/web/logo192.png",
+        "/boardgame-logbook",
+        "/boardgame-logbook/",
+        "/boardgame-logbook/app.css",
+        "/boardgame-logbook/app.js",
+        "/boardgame-logbook/manifest.webmanifest",
+        "/boardgame-logbook/wasm_exec.js",
+        "/boardgame-logbook/web/app.wasm",
+        "/boardgame-logbook/web/logo192.png",
         
       ]);
     })
@@ -33,7 +33,7 @@ self.addEventListener("activate", event => {
       );
     })
   );
-  console.log("app worker eedd657c07629ef8f16e2a1ef893455d2b9e37eb is activated");
+  console.log("app worker c7a21deabfa747de3c94c3d8087e62ba57c0ad9c is activated");
 });
 
 self.addEventListener("fetch", event => {
