@@ -1,0 +1,21 @@
+{
+  "short_name": "Boardgame Logbook",
+  "name": "Boardgame Logbook",
+  "icons": [
+    {
+      "src": "/pablo/test-bl/web/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/pablo/test-bl/",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "scope": "/pablo/test-bl/",
+  "start_url": "/pablo/test-bl/",
+  "background_color": "#2d2c2c",
+  "theme_color": "#2d2c2c",
+  "display": "standalone"
+}
